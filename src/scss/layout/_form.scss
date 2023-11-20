@@ -8,46 +8,11 @@
         height: 55px;
     }
 
-    &_name_box {
+    &_box {
         width: 281px;
         height: 30px;
-        margin: 7px 0 0;
-        padding: 3px 205px 7px 9px;
+        margin: 7px 0 20px 0;
         border: solid 1px $hospital-green;
-    }
-
-    &_job {
-        width: 218px;
-        height: 55px;
-    }
-
-    &_image {
-        width: 218px;
-        height: 55px;
-    }
-
-    &_email {
-        width: 218px;
-        height: 55px;
-    }
-
-    &_telephone {
-        width: 218px;
-        height: 55px;
-    }
-
-    &_linkedin {
-        width: 218px;
-        height: 55px;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    &_github {
-        width: 218px;
-        height: 55px;
-        display: flex;
-        flex-direction: column;
+        padding: 9px;
     }
 }
