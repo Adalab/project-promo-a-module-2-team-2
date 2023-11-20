@@ -1,8 +1,8 @@
-.app_mobile{
+.landing{
     width: 20rem;
     height: 35.5rem;
 }
-.Rectangle-3 {
+.rectangle-3 {
     width: 20rem;
     height: 28.6rem;
     padding: 5.87rem 1.62rem 1.87rem 1.56rem;
@@ -13,3 +13,26 @@
     height: 3.94rem;
     object-fit: contain;
   }
+.create__tarjet {
+    width: 13.95rem;
+    height: 1.5rem;
+    margin: 2.21rem 1.4rem 0rem 1.38rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    font-family: $fontmerry;
+    color: $dull-orange;
+}
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: solid 1.6px red($color: #000000)
+}
+.button {
+    text-decoration: none;
+}
