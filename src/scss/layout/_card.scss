@@ -1,0 +1,17 @@
+.aside {
+    background: linear-gradient(to bottom, $silver, $pale-grey);
+    height: 46rem;
+    padding: 4rem;
+
+    &__card {
+        background-color: $white;
+        height: 33rem;
+        display: flex;
+        flex-direction: column;
+
+        &__photo {
+            height: 20rem;
+            width: 24rem;
+        }
+    }
+}
