@@ -1,38 +1,58 @@
-.landing{
-    width: 20rem;
-    height: 35.5rem;
+.landing {
+  width: 320px;
+  height: 568px;
 }
 .rectangle-3 {
-    width: 20rem;
-    height: 28.6rem;
-    padding: 5.87rem 1.62rem 1.87rem 1.56rem;
-    background-color: $backgroundlanding;
-  }
+  width: 320px;
+  height: 458px;
+  padding: 94px 26px 30px 25px;
+  background-color: $whitefour;
+}
 .landinglogo__awesomecards {
-    width: 15.6rem;
-    height: 3.94rem;
-    object-fit: contain;
-  }
+  width: 250px;
+  height: 63px;
+  object-fit: contain;
+}
 .create__tarjet {
-    width: 13.95rem;
-    height: 1.5rem;
-    margin: 2.21rem 1.4rem 0rem 1.38rem;
-    font-size: 1.2rem;
-    font-weight: 900;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    font-family: $fontmerry;
-    color: $dull-orange;
+  width: 223px;
+  height: 24px;
+  margin: 35.4px 22.9px 0px 22.1px;
+  font-size: 19.2px;
+  font-weight: 900;
+  text-align: center;
+  font-family: $fontmerry;
+  color: $dull-orange;
 }
-.options{
+.better__contacts {
+  width: 264.8px;
+  height: 38.4px;
+  margin: 0px 1.6px 17.8px 1.6px;
+  font-family: $opensans-regular;
+  font-size: 12.8px;
+  text-align: center;
+  color: $dark-blue;
+}
+
+.options {
+    width: 268px;
+    height: 73.8px;
+    margin: 17.8px 0 0.2px;
+    padding: 15px 20px 9.8px 20px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    border: solid 1.6px red($color: #000000)
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    border: solid 1.6px $dull-orange;
 }
-.button {
+.button__start {
+  width: 129px;
+  height: 42px;
+  margin: 38px 75px 0 65px;
+  padding: 10px 20px;
+  border-radius: 21px;
+  &__button {
     text-decoration: none;
+    color: $whitefour;
+    background-color: $dark-blue;
+    font-weight: 700;
+  }
 }
