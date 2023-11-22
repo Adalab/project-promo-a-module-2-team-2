@@ -1,0 +1,145 @@
+.card__create{
+    width: 100%;
+}
+
+/* SECTION DESIGN*/
+
+.create__content{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border:none;
+    margin:30px 20px 30px;
+}
+
+.content__legend{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 7px;
+}
+
+.info__text{
+    font-size: 1.8rem;
+    font-family:'Open Sans', sans-serif;
+    color:#54585a;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+.info__icon{
+    width: 21px;
+    height: 18px;
+}
+
+
+/*-----*/
+
+.content__design{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 7px;
+    margin-bottom: 30px;
+ }
+
+
+ .design__title{
+    padding-left: 39px;
+    color:#54585a;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 100;
+ }
+
+ .select__container{
+    display: flex;
+    padding-left: 10px;
+ }
+
+ .select__colors{
+    display:flex;
+ }
+
+ .color__options{
+    display: flex;
+    flex-direction: column;
+ }
+.container__color{
+    width: 30px;
+    height: 25px;
+ }
+
+ .color__1{
+    background-color: #114e4e;
+ }
+
+ .color__2{
+    background-color:#438792;
+ }
+
+ .color__3{
+    background-color:#a2deaf;
+ }
+
+ .color__4{
+    background-color:#420101; 
+ }
+ .color__5{
+    background-color:#bd1010; 
+ }
+ .color__6{
+    background-color:#e95626;
+ }
+ .color__7{
+    background-color:#3e5b65;
+ }
+ .color__8{
+    background-color:#eab052;
+ }
+ .color__9{
+    background-color:#a0c0cf;
+ }
+
+
+
+
+
+ .select__option{
+    display: flex;
+    margin-bottom: 20px;
+ }
+
+ .content__icon{
+    width: 16px;
+    height: 18px;
+}
+
+.content__button{
+    width: 199px;
+    height: 50px;
+    background-color:#e17334;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border:none;
+    margin: 0 auto;
+}
+.button__text{
+    color: white;
+    font-size: 18px;
+    font-family:'Open Sans', sans-serif;
+    text-transform: uppercase;
+    padding-left: 9px;
+
+}
+.button__icon{
+    width: 25px;
+    height: 22px;
+}
+
