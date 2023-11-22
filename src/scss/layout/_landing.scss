@@ -3,7 +3,7 @@
 }
 .rectangle-3 {
   height: 458px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 94px 26px 30px 25px;
@@ -13,6 +13,10 @@
   width: 250px;
   height: 63px;
   object-fit: contain;
+  @media (min-width: 768px) {
+    width: 417px;
+    height: 105px;
+  }
 }
 .create__tarjet {
   margin-top: 35px;
@@ -21,6 +25,10 @@
   text-align: center;
   font-family: $fontmerry;
   color: $dull-orange;
+  @media (min-width: 768px) {
+    width: 320px;
+    font-size: 30px;
+  }
 }
 .better__contacts {
   width: 264.8px;
@@ -30,23 +38,27 @@
   font-size: 12.8px;
   text-align: center;
   color: $dark-blue;
+  @media (min-width: 768px) {
+    width: 350px;
+    font-size: 16px;
+  }
 }
 .options {
-    width: 268px;
-    height: 73.8px;
-    margin: 17.8px 0 0.2px;
-    padding: 15px 20px 9.8px 20px;
-    display: flex;
-    align-items: first baseline;
-    justify-content: space-around;
-    border: solid 1.6px $dull-orange;
-    &__text {
-      font-size: 12.8px;
-      font-family: $opensans-regular;
-    }
-    &__details{
-      text-align: center;
-    }
+  width: 268px;
+  height: 73.8px;
+  margin: 17.8px 0 0.2px;
+  padding: 15px 20px 9.8px 20px;
+  display: flex;
+  align-items: first baseline;
+  justify-content: space-around;
+  border: solid 1.6px $dull-orange;
+  &__text {
+    font-size: 12.8px;
+    font-family: $opensans-regular;
+  }
+  &__details {
+    text-align: center;
+  }
 }
 .button {
   width: 129px;
