@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  height: 111px;
+
+  &__logo {
+    width: 201px;
+    height: 50px;
+    object-fit: contain;
+    margin: 31px 79px 30px 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 111px;
+  }
+}
