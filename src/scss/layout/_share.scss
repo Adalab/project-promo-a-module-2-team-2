@@ -1,12 +1,13 @@
 .share {
   width: 100%;
   height: 167px;
-  display: flex;
-  flex-direction: column;
 
   &__group {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     height: 137px;
     border-top: 1px solid $white-three;
@@ -15,23 +16,20 @@
   }
 
   &__text {
-    grid-column: span 3;
     align-self: center;
     font-family: $opensans-regular;
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 15px;
     color: $gunmetal;
   }
 
   &__link {
-    grid-column: span 3;
     font-family: $opensans-regular;
     color: $dull-orange;
     font-size: 12px;
   }
 
   &__button {
-    grid-column: 2;
     justify-content: center;
     width: 181px;
     height: 30px;
@@ -43,5 +41,6 @@
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 5px;
   }
 }
