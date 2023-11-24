@@ -1,0 +1,49 @@
+.share {
+  width: 100%;
+  height: 167px;
+
+  &__group {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 137px;
+    border-top: 1px solid $white-three;
+    border-bottom: 1px solid $white-three;
+    padding-inline-start: 2px;
+  }
+
+  &__text {
+    align-self: center;
+    font-family: $opensans-regular;
+    font-size: 18px;
+    margin-top: 15px;
+    color: $gunmetal;
+  }
+
+  &__link {
+    font-family: $opensans-regular;
+    color: $dull-orange;
+    font-size: 12px;
+  }
+
+  &__button {
+    justify-content: center;
+    width: 181px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #1da1f2;
+    border-radius: 5px;
+    margin-top: 5px;
+    &__text {
+      font-family: $opensans-regular;
+      font-size: 14px;
+      color: #fff;
+      text-decoration: none;
+      margin-left: 9px;
+    }
+  }
+}
