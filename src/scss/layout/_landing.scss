@@ -69,14 +69,12 @@
     width: 325px;
   }
 
-  &__design {
-    width: 32px;
-    height: 32px;
-  }
-
   &__text {
     font-size: 1.28rem;
     font-family: $opensans-regular;
+    @media (min-width: 768px) {
+      font-size: 2.2rem;
+    }
   }
 
   &__details {
@@ -84,6 +82,10 @@
   }
 }
 
+.fa-regular fa-object-ungroup {
+  width: 3.2rem;
+  height: 2.6rem;
+}
 .button {
   width: 129px;
   height: 42px;
