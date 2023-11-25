@@ -1,7 +1,10 @@
-.aside {
+.preview {
     background: linear-gradient(to bottom, $silver, $pale-grey);
     height: 46rem;
     padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__button {
         height: 3rem;
@@ -39,6 +42,7 @@
         }
 
         &__photo {
+            background-image: url("http://placekitten.com/g/240/200");
             height: 20rem;
             width: 24rem;
         }
