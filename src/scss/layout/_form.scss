@@ -17,6 +17,11 @@
         padding: 9px;
     }
 
+    &_image_square {
+        display: flex;
+        flex-direction: row;
+    }
+
     &_image-button {
         width: 140px;
         height: 30px;
@@ -30,5 +35,13 @@
         justify-content: center;
         align-items: center;
         margin: 7px 0 20px 0;
+    }
+
+    &_square {
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border: solid 1px $hospital-green;
+        margin: 7px 110px 20px 20px;
     }
 }
