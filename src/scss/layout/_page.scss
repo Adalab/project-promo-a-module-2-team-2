@@ -1,1 +1,14 @@
-.main {}
+@media all and (min-width: 768px) {
+    .main {
+        display: flex;
+        flex-direction: row;
+        background: linear-gradient(to bottom, $whitefour, $white);
+        padding: 2rem 4rem;
+        gap: 3rem;
+        width: 100vw;
+
+        &__preview {
+            order: 2;
+        }
+    }
+}
