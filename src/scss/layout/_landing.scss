@@ -95,12 +95,17 @@
       color: $dull-orange;
     }
 
-    &__icons1 {
-      width: 36px;
+    &__icons2 {
+      width: 25px;
       height: 26px;
       color: $dull-orange;
     }
   }
+}
+.fa-regular fa-object-ungroup icons1 {
+  width: 36px;
+  height: 26px;
+  color: $dull-orange;
 }
 
 .button {
