@@ -5,6 +5,7 @@
   @media (min-width: 768px) {
     height: 963px;
   }
+
   &__section {
     height: 458px;
     display: flex;
@@ -17,6 +18,7 @@
       height: 963px;
       padding: 348px 174px 59px 175px;
     }
+
     &__logo__awesomecards {
       width: 250px;
       height: 63px;
@@ -72,6 +74,7 @@
   border-radius: 4px;
   border: solid 1.6px rgb(212, 137, 109);
   gap: 15px;
+
   @media (min-width: 768px) {
     width: 325px;
     height: 86px;
@@ -81,6 +84,7 @@
   &__text {
     font-size: 1.28rem;
     font-family: $opensans-regular;
+
     @media (min-width: 768px) {
       font-size: 1.6rem;
     }
@@ -94,6 +98,7 @@
       height: 26px;
       color: $dull-orange;
     }
+
     @media (min-width: 768px) {
       width: 32px;
       height: 29px;
@@ -103,40 +108,45 @@
       width: 25px;
       height: 26px;
       color: $dull-orange;
+
       @media (min-width: 768px) {
         width: 25px;
         height: 29px;
       }
     }
   }
+
   .fa-regular fa-object-ungroup icons1 {
     width: 36px;
     height: 26px;
     color: $dull-orange;
   }
 
-  .button {
-    width: 129px;
-    height: 42px;
-    display: flex;
-    justify-content: center;
-    margin: 38px 75px 0 65px;
-    padding: 10px 20px;
-    border-radius: 21px;
-    background-color: $dirty-blue;
-    @media (min-width: 768px) {
-      margin: 186px 145px 0px;
-      padding: 10px 20.5px 10px 19.5px;
-    }
 
-    &__start {
-      width: 89px;
-      height: 22px;
-      text-decoration: none;
-      font-size: 1.6rem;
-      font-family: $opensans-regular;
-      color: $white;
-      font-weight: 700;
-    }
+}
+
+.button {
+  width: 129px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  margin: 38px 75px 0 65px;
+  padding: 10px 20px;
+  border-radius: 21px;
+  background-color: $dirty-blue;
+
+  @media (min-width: 768px) {
+    margin: 186px 145px 0px;
+    padding: 10px 20.5px 10px 19.5px;
+  }
+
+  &__start {
+    width: 89px;
+    height: 22px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: $opensans-regular;
+    color: $white;
+    font-weight: 700;
   }
 }
