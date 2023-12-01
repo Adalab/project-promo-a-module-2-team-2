@@ -27,8 +27,8 @@
 
   <div class="form_group">
     <label class="form_text" for="telefono">Teléfono</label>
-    <input class="form_box js__inputPhone" type="tel" id="telefono" name="telefono"
-      placeholder="Ej: 666 66 66 66" /><span class="form_error js__errorPhone"></span>
+    <input class="form_box js__inputPhone" type="tel" id="telefono" name="telefono" placeholder="Ej: 666 66 66 66"
+      pattern="/^\+?(\d.*){3,}$/" /><span class="form_error js__errorPhone"></span>
   </div>
 
   <div class="form_group">
