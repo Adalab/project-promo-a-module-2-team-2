@@ -39,16 +39,10 @@ function updateCardPreview() {
 //   }
 //
 
-//EVENTO PARA EL INPUT DEL NOMBRE
+//EVENTO PARA INPUTS FORMULARIO
 
 inputName.addEventListener("input", updateCardPreview);
-
-//EVENTO PARA EL INPUT DEL PUESTO
-
 inputJob.addEventListener("input", updateCardPreview);
-
-//EVENTO PARA ICONOS (MAIL, TEL, ETC)
-
 inputMail.addEventListener("input", updateCardPreview);
 inputPhone.addEventListener("input", updateCardPreview);
 inputLinkedin.addEventListener("input", updateCardPreview);
