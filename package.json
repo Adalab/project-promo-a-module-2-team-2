@@ -26,5 +26,8 @@
 	},
 	"author": "Adalab",
 	"license": "MIT",
-	"homepage": "https://github.com/adalab/adalab-web-starter-kit"
+	"homepage": "https://github.com/adalab/adalab-web-starter-kit",
+	"dependencies": {
+		"@vituum/vite-plugin-concat": "^1.1.0"
+	}
 }

@@ -4,6 +4,8 @@ import { defineConfig } from "vite";
 import injectHTML from "vite-plugin-html-inject";
 // optimize images
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+// Concatenate JavaScript files (like former Starter Kit)
+import concat from '@vituum/vite-plugin-concat';
 // Calculate paths
 import FastGlob from 'fast-glob'
 import path from 'node:path';
@@ -41,8 +43,8 @@ export default defineConfig({
       input: inputFilesList,
       output: {
         sourcemap: true,
-        entryFileNames: ({name}) => {
-          if( name === 'main' ) {
+        entryFileNames: ({ name }) => {
+          if (name === 'main') {
             return 'js/main.js';
           }
           // default value
@@ -60,5 +62,8 @@ export default defineConfig({
     ViteImageOptimizer({
       /* pass your config */
     }),
+    concat({
+      input: ['main.js']
+    })
   ],
 });
