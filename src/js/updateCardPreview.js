@@ -30,15 +30,6 @@ function updateCardPreview() {
   cardGithub.href = inputGithub.value;
 }
 
-//SI EN PHONE NO PONEN NÚMEROS
-//   if (typeof inputPhone.value === "number") {
-//     cardPhone.innerHTML = inputPhone.value.toString();
-//   } else {
-//     errorPhone.textContent =
-//       "Proporciona un número de teléfono correcto, por favor.";
-//   }
-//
-
 //EVENTO PARA INPUTS FORMULARIO
 
 inputName.addEventListener("input", updateCardPreview);
