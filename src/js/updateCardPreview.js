@@ -27,7 +27,10 @@ function updateCardPreview() {
   cardMail.href = "mailto:" + inputMail.value;
   cardPhone.href = "tel:" + inputPhone.value;
   cardLinkedin.href = inputLinkedin.value;
-  cardGithub.href = inputGithub.value;
+  const githubUsername = inputGithub.value.replace("@", "");
+  cardGithub.href = githubUsername
+    ? `https://github.com/${githubUsername}`
+    : "#";
 }
 
 //EVENTO PARA INPUTS FORMULARIO
