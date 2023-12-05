@@ -1,14 +1,14 @@
-.landing__section {  
+.landing__section {
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 94px 26px 30px 25px;
+  padding: 0 26px 30px 25px;
   background-color: $whitefour;
   position: fixed;
   top: 0;
-  margin:auto;
+  margin: auto;
   justify-content: center;
 
   &__logo__awesomecards {
@@ -17,6 +17,7 @@
     object-fit: contain;
 
     @media (min-width: 768px) {
+      padding-top: 30px;
       width: 419px;
       height: 105px;
     }
@@ -32,7 +33,6 @@
   color: $dull-orange;
 
   @media (min-width: 768px) {
-    width: 350px;
     font-size: 3rem;
   }
 }
@@ -68,7 +68,7 @@
   @media (min-width: 768px) {
     width: 325px;
     height: 86px;
-    margin: 27px 47px 0px;
+
   }
 
   &__text {
@@ -82,11 +82,13 @@
 
   &__details {
     text-align: center;
+
     @media (min-width: 768px) {
       display: flex;
       flex-direction: column;
-      align-items: center;     
+      align-items: center;
     }
+
     &__icons1 {
       width: 32px;
       height: 26px;
