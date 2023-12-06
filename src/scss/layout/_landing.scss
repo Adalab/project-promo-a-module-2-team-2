@@ -124,13 +124,13 @@
   height: 42px;
   display: flex;
   justify-content: center;
-  margin: 38px 75px 0 65px;
+  margin: 50px 75px 0 65px;
   padding: 10px 20px;
   border-radius: 21px;
   background-color: $dirty-blue;
 
   @media (min-width: 768px) {
-    margin-bottom: 59px;
+    margin-bottom: 0;
     padding: 10px 20.5px 10px 19.5px;
   }
 
