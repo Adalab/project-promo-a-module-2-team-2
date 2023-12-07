@@ -1,18 +1,31 @@
 <form class="card__create" action="#">
   <fieldset class="create__content">
-    <legend class="content__legend">
+    <legend class="content__legend js__arrow_designbutton">
       <div class="legend__info">
-        <i class="info__icon fa-regular fa-object-ungroup" style="color: #E17334;"></i>
+        <i
+          class="info__icon fa-regular fa-object-ungroup"
+          style="color: #e17334"
+        ></i>
         <span class="info__text">Diseña</span>
       </div>
-      <i class="content__icon fa-solid fa-chevron-down js__arrow_button" style="color: #54585a;"></i>
+      <div class="js__icon_design"><i
+        class="content__icon fa-solid fa-chevron-down"
+        style="color: #54585a"
+      ></i>
+      </div>
     </legend>
     <div class="content__design js__content_design hidden">
       <span class="design__title">Colores</span>
       <div class="design__colors">
         <div class="colors__select">
           <label for="palette1" class="select__option">
-            <input class="js__palette1" id="palette1" type="radio" value="1" name="palette" />
+            <input
+              class="js__palette1"
+              id="palette1"
+              type="radio"
+              value="1"
+              name="palette"
+            />
             <div class="select__container">
               <div class="container__color color__1"></div>
               <div class="container__color color__2"></div>
@@ -22,7 +35,13 @@
         </div>
         <div class="colors__select">
           <label for="palette2" class="select__option">
-            <input class="js__palette2" id="palette2" type="radio" value="2" name="palette" />
+            <input
+              class="js__palette2"
+              id="palette2"
+              type="radio"
+              value="2"
+              name="palette"
+            />
             <div class="select__container">
               <div class="container__color color__4"></div>
               <div class="container__color color__5"></div>
@@ -32,7 +51,13 @@
         </div>
         <div class="colors__select">
           <label for="palette3" class="select__option">
-            <input class="js__palette3" id="palette3" type="radio" value="3" name="palette" />
+            <input
+              class="js__palette3"
+              id="palette3"
+              type="radio"
+              value="3"
+              name="palette"
+            />
             <div class="select__container">
               <div class="container__color color__7"></div>
               <div class="container__color color__8"></div>
@@ -44,25 +69,40 @@
     </div>
   </fieldset>
   <fieldset class="create__content">
-    <legend class="content__legend">
+    <legend class="content__legend js__arrow_formbutton">
       <div class="legend__info">
-        <i class="info__icon fa-solid fa-share-nodes" style="color: #E17334;"></i>
+        <i
+          class="info__icon fa-solid fa-share-nodes"
+          style="color: #e17334"
+        ></i>
         <span class="info__text">Rellena</span>
       </div>
-      <i class="content__icon fa-solid fa-chevron-down js__arrow_button" style="color: #54585a;"></i>
+      <div class="js__icon_form"><i
+        class="content__icon fa-solid fa-chevron-down js__arrow_button"
+        style="color: #54585a"
+      ></i>
+      </div>
     </legend>
     <load src="/partials/form.html" />
   </fieldset>
   <fieldset class="create__content">
-    <legend class="content__legend">
+    <legend class="content__legend js__arrow_sharebutton">
       <div class="legend__info">
-        <i class="info__icon fa-regular fa-keyboard" style="color: #E17334;"></i>
+        <i class="info__icon fa-regular fa-keyboard" style="color: #e17334"></i>
         <span class="info__text">Comparte</span>
       </div>
-      <i class="content__icon fa-solid fa-chevron-down js__arrow_button" style="color: #54585a;"></i>
+      <div class="js__icon_share"><i
+        class="content__icon fa-solid fa-chevron-down js__arrow_button"
+        style="color: #54585a"
+      ></i>
+      </div>
+      </legend>
     </legend>
-    <button class="content__button js__content_button js__buttonClicked">
-      <i class="button__icon fa-regular fa-address-card" style="color: #ffffff;"></i>
+    <button class="content__button js__content_share js__buttonClicked hidden">
+      <i
+        class="button__icon fa-regular fa-address-card"
+        style="color: #ffffff"
+      ></i>
       <span class="button__text">Crear tarjeta</span>
     </button>
   </fieldset>
