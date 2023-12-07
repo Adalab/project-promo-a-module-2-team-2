@@ -41,3 +41,20 @@ inputMail.addEventListener("input", updateCardPreview);
 inputPhone.addEventListener("input", updateCardPreview);
 inputLinkedin.addEventListener("input", updateCardPreview);
 inputGithub.addEventListener("input", updateCardPreview);
+
+
+
+// CAMBIAR COLOR BOTON Y APARECER AVISO TARJETA CREADA
+
+// Cambiar estilos del botón en Share y aparecer la seccion de tarjeta creada:
+
+const ButtonClicked = document.querySelector('.js__buttonClicked');
+const shareSection = document.querySelector('.js__share');
+
+ButtonClicked.addEventListener('click',(event) =>{
+
+    //cambiar el color del button share 
+    ButtonClicked.classList.toggle('button__clicked');
+    //Mostrar la sección de Share 
+    shareSection.classList.toggle('share__hidden');
+});
