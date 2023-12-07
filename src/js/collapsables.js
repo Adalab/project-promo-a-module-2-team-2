@@ -11,16 +11,16 @@ const iconDesignButton = document.querySelector('.js__icon_design');
 const iconFormButton = document.querySelector('.js__icon_form');
 const iconShareButton = document.querySelector('.js__icon_share');
 
-
 // FUNCIONES
+
 const toggleContent = (element,icon) => {
     element.classList.toggle('hidden');
     icon.classList.toggle ('button_rotate');
 };
 
-// EVENTO
+// EVENTOS
+
 arrowDesignButton.addEventListener('click',(event)=> {
-    event.preventDefault();
   toggleContent(contentDesign,iconDesignButton);
   contentForm.classList.add('hidden');
   contentShare.classList.add('hidden'); // Asegura que el otro esté cerrado
@@ -28,18 +28,18 @@ arrowDesignButton.addEventListener('click',(event)=> {
 });
 
 arrowFormButton.addEventListener('click',(event)=> {
-  event.preventDefault();
 toggleContent(contentForm,iconFormButton);
 contentDesign.classList.add('hidden');
 contentShare.classList.add('hidden');
 });
 
 arrowShareButton.addEventListener('click',(event)=> {
-  event.preventDefault();
 toggleContent(contentShare,iconShareButton);
 contentDesign.classList.add('hidden');
 contentForm.classList.add('hidden');
 });
+
+// CÓDIGO QUE SE EJECUTA AL CARGAR LA PÁGINA
 
 window.addEventListener ('load',(event)=> {
   contentDesign.classList.remove('hidden')
