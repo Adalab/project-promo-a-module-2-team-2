@@ -22,17 +22,29 @@ const toggleContent = (element,icon) => {
 arrowDesignButton.addEventListener('click',(event)=> {
     event.preventDefault();
   toggleContent(contentDesign,iconDesignButton);
+  contentForm.classList.add('hidden');
+  contentShare.classList.add('hidden'); // Asegura que el otro esté cerrado
+
 });
 
 arrowFormButton.addEventListener('click',(event)=> {
   event.preventDefault();
 toggleContent(contentForm,iconFormButton);
+contentDesign.classList.add('hidden');
+contentShare.classList.add('hidden');
 });
 
 arrowShareButton.addEventListener('click',(event)=> {
   event.preventDefault();
 toggleContent(contentShare,iconShareButton);
+contentDesign.classList.add('hidden');
+contentForm.classList.add('hidden');
 });
+
+window.addEventListener ('load',(event)=> {
+  contentDesign.classList.remove('hidden')
+});
+
 
 
 
