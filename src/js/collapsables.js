@@ -47,6 +47,7 @@ arrowShareButton.addEventListener('click', (event) => {
   contentForm.classList.add('hidden');
   iconDesignButton.classList.remove('button_rotate'); // Restablece el icono de Design
   iconFormButton.classList.remove('button_rotate'); // Restablece el icono de Form
+  shareSection.classList.add('share__hidden');
 });
 
 
