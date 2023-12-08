@@ -28,6 +28,7 @@
   margin-left: 10px;
   text-transform: uppercase;
 }
+
 .info__icon {
   width: 21px;
   height: 18px;
@@ -66,6 +67,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .container__color {
   width: 30px;
   height: 25px;
@@ -86,18 +88,23 @@
 .color__4 {
   background-color: #420101;
 }
+
 .color__5 {
   background-color: #bd1010;
 }
+
 .color__6 {
   background-color: #e95626;
 }
+
 .color__7 {
   background-color: #3e5b65;
 }
+
 .color__8 {
   background-color: #eab052;
 }
+
 .color__9 {
   background-color: #a0c0cf;
 }
@@ -110,6 +117,7 @@
 .content__icon {
   width: 16px;
   height: 18px;
+  cursor: pointer;
 }
 
 .content__button {
@@ -123,7 +131,9 @@
   align-items: center;
   border: none;
   margin: 0 auto;
+  cursor: pointer;
 }
+
 .button__text {
   color: white;
   font-size: 18px;
@@ -131,6 +141,7 @@
   text-transform: uppercase;
   padding-left: 9px;
 }
+
 .button__icon {
   width: 25px;
   height: 22px;
@@ -139,6 +150,17 @@
 .hidden {
   display: none;
 }
+
 .button_rotate {
   rotate: 180deg;
+}
+
+.colors__click {
+  cursor: pointer;
+}
+
+@media all and (min-width: 768px) {
+  .card__create {
+    width: 40rem;
+  }
 }
