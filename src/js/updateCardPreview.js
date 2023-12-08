@@ -34,6 +34,7 @@ function updateCardPreview() {
   cardGithub.href = githubUsername
     ? `https://github.com/${githubUsername}`
     : "#";
+
 };
 
 //EVENTO PARA INPUTS FORMULARIO
@@ -45,7 +46,8 @@ inputPhone.addEventListener("input", updateCardPreview);
 inputLinkedin.addEventListener("input", updateCardPreview);
 inputGithub.addEventListener("input", updateCardPreview);
 
-  resetButton.addEventListener('click', () => {
+  resetButton.addEventListener('click',() => {
+    
     // Reseteamos el formulario
     inputName.value = "";
     inputJob.value = "";
@@ -53,6 +55,14 @@ inputGithub.addEventListener("input", updateCardPreview);
     inputPhone.value = "";
     inputLinkedin.value = "";
     inputGithub.value = "";
+
+   // Valores por defecto del formulario
+    cardName.innerHTML = "Nombre Apellido";
+    cardJob.innerHTML = "Front-End developer";
+    cardMail.href = "mailto:";
+    cardPhone.href = "tel:";
+    cardLinkedin.href = "";
+    cardGithub.href = "";
   // Reseteamos los colores de la tarjeta
     cardPreview.classList.remove('palette2', 'palette3');
   });
