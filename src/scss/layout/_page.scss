@@ -1,18 +1,18 @@
 .main {
-    padding-bottom: 11rem;
+  padding-bottom: 11rem;
 }
 
 @media all and (min-width: 768px) {
-    .main {
-        display: flex;
-        flex-direction: row;
-        background: linear-gradient(to bottom, $whitefour, $white);
-        padding: 2rem 4rem 8rem 4rem;
-        gap: 3rem;
-        justify-content: space-between;
+  .main {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to bottom, $whitefour, $white);
+    padding: 2rem 4rem 8rem 4rem;
+    gap: 3rem;
+    justify-content: space-between;
 
-        &__preview {
-            order: 2;
-        }
+    &__preview {
+      order: 2;
     }
+  }
 }
