@@ -13,31 +13,71 @@ const iconShareButton = document.querySelector('.js__icon_share');
 
 // FUNCIONES
 
-const toggleContent = (element,icon) => {
-    element.classList.toggle('hidden');
-    icon.classList.toggle ('button_rotate');
+const toggleContent = (element, icon) => {
+  if (!element.classList.contains('hidden')) {
+      element.classList.add('hidden');
+      icon.classList.remove('button_rotate');
+  } else {
+      element.classList.remove('hidden');
+      icon.classList.add('button_rotate');
+  }
 };
 
 // EVENTOS
 
-arrowDesignButton.addEventListener('click',(event)=> {
-  toggleContent(contentDesign,iconDesignButton);
+arrowDesignButton.addEventListener('click', (event) => {
+  toggleContent(contentDesign, iconDesignButton);
   contentForm.classList.add('hidden');
-  contentShare.classList.add('hidden'); // Asegura que el otro esté cerrado
-
+  contentShare.classList.add('hidden');
+  iconFormButton.classList.remove('button_rotate'); // Restablece el icono de Form
+  iconShareButton.classList.remove('button_rotate'); // Restablece el icono de Share
 });
 
-arrowFormButton.addEventListener('click',(event)=> {
-toggleContent(contentForm,iconFormButton);
-contentDesign.classList.add('hidden');
-contentShare.classList.add('hidden');
+arrowFormButton.addEventListener('click', (event) => {
+  toggleContent(contentForm, iconFormButton);
+  contentDesign.classList.add('hidden');
+  contentShare.classList.add('hidden');
+  iconDesignButton.classList.remove('button_rotate'); // Restablece el icono de Design
+  iconShareButton.classList.remove('button_rotate'); // Restablece el icono de Share
 });
 
-arrowShareButton.addEventListener('click',(event)=> {
-toggleContent(contentShare,iconShareButton);
-contentDesign.classList.add('hidden');
-contentForm.classList.add('hidden');
+arrowShareButton.addEventListener('click', (event) => {
+  toggleContent(contentShare, iconShareButton);
+  contentDesign.classList.add('hidden');
+  contentForm.classList.add('hidden');
+  iconDesignButton.classList.remove('button_rotate'); // Restablece el icono de Design
+  iconFormButton.classList.remove('button_rotate'); // Restablece el icono de Form
 });
+
+
+// // FUNCIONES
+
+// const toggleContent = (element,icon) => {
+//     element.classList.toggle('hidden');
+//     icon.classList.toggle('button_rotate');
+// };
+
+
+// // EVENTOS
+
+// arrowDesignButton.addEventListener('click',(event)=> {
+//   toggleContent(contentDesign,iconDesignButton);
+//   contentForm.classList.add('hidden');
+//   contentShare.classList.add('hidden'); // Asegura que el otro esté cerrado
+
+// });
+
+// arrowFormButton.addEventListener('click',(event)=> {
+// toggleContent(contentForm,iconFormButton);
+// contentDesign.classList.add('hidden');
+// contentShare.classList.add('hidden');
+// });
+
+// arrowShareButton.addEventListener('click',(event)=> {
+// toggleContent(contentShare,iconShareButton);
+// contentDesign.classList.add('hidden');
+// contentForm.classList.add('hidden');
+// });
 
 // CÓDIGO QUE SE EJECUTA AL CARGAR LA PÁGINA
 
