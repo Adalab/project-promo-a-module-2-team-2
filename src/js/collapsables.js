@@ -55,3 +55,6 @@ arrowShareButton.addEventListener("click", (event) => {
 window.addEventListener("load", (event) => {
   contentDesign.classList.remove("hidden");
 });
+
+
+// Funcion para que la persona no pueda cerrar el desplegable, que no se ejecute el click a no ser que abra otro. 
