@@ -18,3 +18,11 @@ palette1.addEventListener('click', handleColors);
 palette2.addEventListener('click', handleColors);
 
 palette3.addEventListener('click', handleColors);
+
+
+
+// CÓDIGO QUE SE EJECUTA AL CARGAR LA PÁGINA
+
+window.addEventListener("load", (event) => {
+    palette1.click();
+  });
