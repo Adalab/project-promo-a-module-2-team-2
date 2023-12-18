@@ -51,7 +51,6 @@ arrowShareButton.addEventListener("click", (event) => {
 });
 
 // CÓDIGO QUE SE EJECUTA AL CARGAR LA PÁGINA
-
 window.addEventListener("load", (event) => {
   contentDesign.classList.remove("hidden");
 });
