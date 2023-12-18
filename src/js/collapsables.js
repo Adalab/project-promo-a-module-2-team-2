@@ -15,12 +15,13 @@ const iconShareButton = document.querySelector(".js__icon_share");
 
 const toggleContent = (element, icon) => {
   if (!element.classList.contains("hidden")) {
-    element.classList.add("hidden");
-    icon.classList.remove("button_rotate");
-  } else {
+    // He eliminado el add hidden, no permito que el usuario vuelva a clicar en la misma sección. Hay que revisar esta funcion.
+    //element.classList.add("hidden"); 
+    //icon.classList.remove("button_rotate");
+   } else {
     element.classList.remove("hidden");
     icon.classList.add("button_rotate");
-  }
+  };
 };
 
 // EVENTOS
@@ -53,6 +54,7 @@ arrowShareButton.addEventListener("click", (event) => {
 // CÓDIGO QUE SE EJECUTA AL CARGAR LA PÁGINA
 window.addEventListener("load", (event) => {
   contentDesign.classList.remove("hidden");
+  iconDesignButton.classList.add("button_rotate");
 });
 
 
