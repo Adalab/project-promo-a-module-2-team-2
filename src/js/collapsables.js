@@ -14,14 +14,10 @@ const iconShareButton = document.querySelector(".js__icon_share");
 // FUNCIONES
 
 const toggleContent = (element, icon) => {
-  if (!element.classList.contains("hidden")) {
-    // He eliminado el add hidden, no permito que el usuario vuelva a clicar en la misma sección. Hay que revisar esta funcion.
-    //element.classList.add("hidden"); 
-    //icon.classList.remove("button_rotate");
-   } else {
+  if (element.classList.contains("hidden")) {
     element.classList.remove("hidden");
     icon.classList.add("button_rotate");
-  };
+  }
 };
 
 // EVENTOS
@@ -52,11 +48,8 @@ arrowShareButton.addEventListener("click", (event) => {
 });
 
 // CÓDIGO QUE SE EJECUTA AL CARGAR LA PÁGINA
+
 window.addEventListener("load", (event) => {
   contentDesign.classList.remove("hidden");
   iconDesignButton.classList.add("button_rotate");
 });
-
-
-// Funcion para que la persona no pueda cerrar el desplegable, que no se ejecute el click a no ser que abra otro. 
-
