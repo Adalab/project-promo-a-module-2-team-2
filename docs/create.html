@@ -13,13 +13,15 @@
     rel="stylesheet" />
   <link rel="icon" href="./images/favicon.png" />
   
-  <link rel="stylesheet" href="./assets/main-255ba004.css">
+  <link rel="stylesheet" href="./assets/main-a85d83a1.css">
 </head>
 
-<body>
+<body class="create__body">
   <header>
     <section class="header">
+    <a href="index.html">
     <div> <img src="./images/logo-awesome-profile-cards.svg" alt="logo-adalab" class="header__logo"></div>
+    </a>
 </section>
   </header>
   <main class="main">
@@ -32,7 +34,7 @@
                 <h1 class="card__details__name js__cardName">Nombre Apellido</h1>
                 <h2 class="card__details__job js__cardJob">Front-End Developer</h2>
             </article>
-            <div class="card__photo"></div>
+            <div class="card__photo js__profile-image"></div>
             <span class="card__social">
                 <a class="js__cardPhone" href="tel:+123456789"><i
                         class="card__social__icon fa-solid fa-mobile-screen-button"></i></a>
@@ -48,32 +50,12 @@
 </section>
     </div>
     <div class="main__form">
-      <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Card Preview</title>
-    <script
-      src="https://kit.fontawesome.com/66349fc88a.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="./images/favicon.png" />
-    
-  </head>
-
-  <body>
-    <form class="card__create" action="#">
+      <body>
+  <form class="card__create" action="#">
   <fieldset class="create__content">
     <legend class="content__legend js__arrow_designbutton">
       <div class="legend__info">
-        <i class="info__icon fa-regular fa-object-ungroup" style="color: #e17334"></i>
+        <i class="info__icon fa-regular fa-object-ungroup"></i>
         <span class="info__text">Diseña</span>
       </div>
       <div class="js__icon_design"><i class="content__icon fa-solid fa-chevron-down" style="color: #54585a"></i>
@@ -118,7 +100,7 @@
   <fieldset class="create__content">
     <legend class="content__legend js__arrow_formbutton">
       <div class="legend__info">
-        <i class="info__icon fa-solid fa-share-nodes" style="color: #e17334"></i>
+        <i class="info__icon fa-solid fa-share-nodes"></i>
         <span class="info__text">Rellena</span>
       </div>
       <div class="js__icon_form"><i class="content__icon fa-solid fa-chevron-down js__arrow_button"
@@ -137,14 +119,12 @@
   </div>
 
   <div class="form_group">
-    <label class="form_text" for="imagen">Imagen de perfil</label>
+    <label class="form_text" for="img-selector">Imagen de perfil</label>
     <div class="form_image_square">
-      <button class="form_image-button" for="img-selector" id="imagen">
-        Añadir imagen
-      </button>
-      <!-- <input class="form_box" type="file" id="imagen" name="imagen"> -->
-      <div class="form_square"></div>
-    </div>
+    <label class="form_image-button" for="img-selector" id="imagen">Añadir imagen</label>
+    <input class="form_input js__profile-upload-btn" type="file" id="img-selector" name="image" />
+    <div class="form_square js__profile-preview"></div>
+  </div>
   </div>
 
   <div class="form_group">
@@ -173,7 +153,7 @@
   <fieldset class="create__content">
     <legend class="content__legend js__arrow_sharebutton">
       <div class="legend__info">
-        <i class="info__icon fa-regular fa-keyboard" style="color: #e17334"></i>
+        <i class="info__icon fa-regular fa-keyboard"></i>
         <span class="info__text">Comparte</span>
       </div>
       <div class="js__icon_share"><i class="content__icon fa-solid fa-chevron-down js__arrow_button"
@@ -187,7 +167,7 @@
     </button>
   </fieldset>
 </form>
-    <article class="share js__share share__hidden">
+  <article class="share js__share share__hidden">
     <div class="share__group">
         <p class="share__text"> La tarjeta ha sido creada:</p>
         <p class="share__link">https://awesome-profile-card.com?id=A456DF0001</p>
@@ -199,9 +179,7 @@
 
     </div>
 </article>
-    <script src="./js/main.js"></script>
-  </body>
-</html>
+</body>
 
     </div>
   </main>
@@ -211,6 +189,7 @@
     <div> <img src="./images/logo-adalab.png" alt="logo-adalab" class="footer__logo"></div>
 </section>
   </footer>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
