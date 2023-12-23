@@ -55,8 +55,10 @@ inputGithub.addEventListener("input", updateCardPreview);
     inputPhone.value = "";
     inputLinkedin.value = "";
     inputGithub.value = "";
+    profileImage.style.backgroundImage = `url("https://placedog.net/240/200")`;
+    profilePreview.style.backgroundImage = `url("")`;
 
-   // Valores por defecto del formulario
+   // Valores por defecto del formularioq
     cardName.innerHTML = "Nombre Apellido";
     cardJob.innerHTML = "Front-End developer";
     cardMail.href = "mailto:";
