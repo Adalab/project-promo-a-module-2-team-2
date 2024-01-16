@@ -28,6 +28,7 @@ arrowDesignButton.addEventListener("click", (event) => {
   contentShare.classList.add("hidden");
   iconFormButton.classList.remove("button_rotate"); // Restablece el icono de Form
   iconShareButton.classList.remove("button_rotate"); // Restablece el icono de Share
+  shareSection.classList.add('share__hidden');
 });
 
 arrowFormButton.addEventListener("click", (event) => {
@@ -36,6 +37,7 @@ arrowFormButton.addEventListener("click", (event) => {
   contentShare.classList.add("hidden");
   iconDesignButton.classList.remove("button_rotate"); // Restablece el icono de Design
   iconShareButton.classList.remove("button_rotate"); // Restablece el icono de Share
+  shareSection.classList.add('share__hidden');
 });
 
 arrowShareButton.addEventListener("click", (event) => {
@@ -45,6 +47,10 @@ arrowShareButton.addEventListener("click", (event) => {
   iconDesignButton.classList.remove("button_rotate"); // Restablece el icono de Design
   iconFormButton.classList.remove("button_rotate"); // Restablece el icono de Form
   shareSection.classList.add("share__hidden");
+
+  if (ButtonClicked.classList.contains("button__clicked")) {
+    shareSection.classList.remove("share__hidden");
+  }
 });
 
 // CÓDIGO QUE SE EJECUTA AL CARGAR LA PÁGINA

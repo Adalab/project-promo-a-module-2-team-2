@@ -79,9 +79,7 @@ const shareSection = document.querySelector('.js__share');
 ButtonClicked.addEventListener('click',(event) =>{
   event.preventDefault();
     //cambiar el color del button share 
-    ButtonClicked.classList.toggle('button__clicked');
-    //Mostrar la sección de Share 
-    shareSection.classList.toggle('share__hidden');
+    ButtonClicked.classList.add('button__clicked');
+     //Mostrar la sección de Share 
+    shareSection.classList.remove('share__hidden');
 });
-
-
