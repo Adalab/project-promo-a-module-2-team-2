@@ -1,5 +1,5 @@
-const cardData = {
-    "palette": '1',
+let cardData = {
+    "palette": '',
     "name": '',
     "job": '',
     "phone": '',

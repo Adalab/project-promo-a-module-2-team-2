@@ -58,4 +58,45 @@ arrowShareButton.addEventListener("click", (event) => {
 window.addEventListener("load", (event) => {
   contentDesign.classList.remove("hidden");
   iconDesignButton.classList.add("button_rotate");
+
+  if (JSON.parse(localStorage.getItem('cardData'))) {
+    cardData = JSON.parse(localStorage.getItem('cardData'));
+    updatePalette()
+    updateFormInput();
+    updateCardPreview();
+    updatePhoto();
+  } else {
+    palette1.click();
+  }
 });
+
+function updatePalette() {
+  const chosenPalette = cardData.palette;
+
+  switch (chosenPalette) {
+    case '2':
+      palette2.click();
+      break;
+    case '3':
+      palette3.click();
+      break;
+    default:
+      palette1.click();
+  }
+}
+
+function updateFormInput() {
+  inputName.value = cardData.name;
+  inputJob.value = cardData.job;
+  inputMail.value = cardData.email;
+  inputPhone.value = cardData.phone;
+  inputLinkedin.value = cardData.linkedin;
+  cardData.github ? inputGithub.value = `@${cardData.github}` : inputGithub.value = "";
+}
+
+function updatePhoto() {
+  if (cardData.photo) {
+    profileImage.style.backgroundImage = `url(${cardData.photo})`;
+    profilePreview.style.backgroundImage = `url(${cardData.photo})`;
+  }
+}

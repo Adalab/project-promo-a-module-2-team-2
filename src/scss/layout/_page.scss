@@ -7,6 +7,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-bottom: 6rem;
 
     .main {
       flex: 1;
@@ -14,7 +15,7 @@
       grid-template-columns: 1fr 1fr;
       flex-direction: row;
       background: linear-gradient(to bottom, $whitefour, $white);
-      padding: 3rem 4rem 2rem 4rem;
+      padding: 3rem 4rem;
       box-sizing: border-box;
       gap: 3rem;
       justify-content: space-between;
