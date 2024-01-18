@@ -15,7 +15,7 @@ Este proyecto consiste en una aplicación web que permite diseñar tu propia tar
 
 - **Compartir:** Haz clic en "Crear tarjeta" para generar tu tarjeta única y obtener un enlace para compartirla. También puedes compartir directamente en Twitter haciendo clic en el botón correspondiente.
 
-### **Guía de inicio rápido 🔍**
+## **Guía de inicio rápido 🔍**
 
 Sigue estos pasos para clonar y ejecutar el proyecto en tu entorno local:
 
