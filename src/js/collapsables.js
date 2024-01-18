@@ -91,7 +91,7 @@ function updateFormInput() {
   inputMail.value = cardData.email;
   inputPhone.value = cardData.phone;
   inputLinkedin.value = cardData.linkedin;
-  inputGithub.value = cardData.github;
+  cardData.github ? inputGithub.value = `@${cardData.github}` : inputGithub.value = "";
 }
 
 function updatePhoto() {

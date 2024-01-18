@@ -42,7 +42,7 @@ function updateCardPreview() {
   cardData.phone = inputPhone.value;
   cardData.email = inputMail.value;
   cardData.linkedin = linkedinName;
-  cardData.github = inputGithub.value;
+  cardData.github = githubUsername;
 
   //save cardData to the local storage
   localStorage.setItem('cardData', JSON.stringify(cardData));
