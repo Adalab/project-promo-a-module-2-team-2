@@ -28,3 +28,21 @@ function handleClickCreate(event) {
 }
 
 createButton.addEventListener("click", handleClickCreate);
+
+// Compartir en Twitter
+
+const twitterButton = document.querySelector(".js__shareButtonTwitter");
+
+twitterButton.addEventListener("click", function (event) {
+  event.preventDefault();
+
+  const cardURL = shareLink.href;
+
+  // Reemplazar espacios con %20 y otros caracteres especiales según sea necesario
+  const tweetText =
+    "¡Echa un vistazo a mi nueva tarjeta!: " + cardURL.replace(/ /g, "%20");
+
+  const twitterIntentURL = "https://twitter.com/intent/tweet?text=" + tweetText;
+
+  window.open(twitterIntentURL, "_blank");
+});
