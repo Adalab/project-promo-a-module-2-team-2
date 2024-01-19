@@ -74,7 +74,7 @@ resetButton.addEventListener('click', () => {
   profileImage.style.backgroundImage = `url("../images/dog.jpg")`;
   profilePreview.style.backgroundImage = `url("")`;
 
-  // Valores por defecto del formularioq
+  // Valores por defecto del formulario
   cardName.innerHTML = "Nombre Apellido";
   cardJob.innerHTML = "Front-End developer";
   cardMail.href = "mailto:";
@@ -97,7 +97,7 @@ resetButton.addEventListener('click', () => {
   ButtonClicked.classList.remove('button__clicked');
   shareSection.classList.add('share__hidden');
 
-  //save cardData to the local storage
+  //Save cardData to the local storage
   localStorage.setItem('cardData', JSON.stringify(cardData));
 });
 
