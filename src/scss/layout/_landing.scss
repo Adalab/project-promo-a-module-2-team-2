@@ -124,14 +124,14 @@
   height: 42px;
   display: flex;
   justify-content: center;
-  margin: 50px 75px 0 65px;
-  padding: 10px 20px;
+  margin: 50px 70px 0 70px;
+  padding: 13px 20px;
   border-radius: 21px;
   background-color: $dirty-blue;
 
   @media (min-width: 768px) {
     margin-bottom: 0;
-    padding: 10px 20.5px 10px 19.5px;
+    padding: 12px 20.5px 10px 19.5px;
   }
 
   &__start {
