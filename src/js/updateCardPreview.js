@@ -29,8 +29,8 @@ function updateCardPreview() {
   cardJob.innerHTML = inputJob.value || "Front-End developer";
   cardMail.href = "mailto:" + inputMail.value;
   cardPhone.href = "tel:" + inputPhone.value;
-  const linkedinName = inputLinkedin.value;
-  cardLinkedin.href = linkedinName ? `https://${linkedinName}` : "#";
+  const linkedinName = inputLinkedin.value.replace("linkedin.com/in/", "");
+  cardLinkedin.href = linkedinName ? `https://linkedin.com/in/${linkedinName}` : "#";
   const githubUsername = inputGithub.value.replace("@", "");
   cardGithub.href = githubUsername
     ? `https://github.com/${githubUsername}`
@@ -93,6 +93,9 @@ resetButton.addEventListener('click', () => {
   cardData.github = "";
   cardData.palette = "1";
   cardData.photo = "";
+
+  ButtonClicked.classList.remove('button__clicked');
+  shareSection.classList.add('share__hidden');
 
   //save cardData to the local storage
   localStorage.setItem('cardData', JSON.stringify(cardData));
