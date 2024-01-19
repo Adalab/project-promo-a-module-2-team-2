@@ -71,7 +71,7 @@ resetButton.addEventListener('click', () => {
   inputPhone.value = "";
   inputLinkedin.value = "";
   inputGithub.value = "";
-  profileImage.style.backgroundImage = `url("https://placedog.net/240/200")`;
+  profileImage.style.backgroundImage = `url("../images/dog.jpg")`;
   profilePreview.style.backgroundImage = `url("")`;
 
   // Valores por defecto del formularioq
